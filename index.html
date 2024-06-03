@@ -114,20 +114,25 @@ body, html {
 /* Style individual grid items (people) */
 .grid-item {
   text-align: center;
+  width: 100%; /* Ensure each grid item takes up the same width */
 }
 
 .grid-item img {
-  max-width: 100%; /* Ensure images fit within their containers */
+  width: 100%; /* Set the width of the image to fill its container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 200px; /* Set the maximum width for consistency */
 }
 
 .grid-item p {
   margin-top: 10px; /* Add spacing below each person's name */
-
 }
 
 /* Style the additional person at the bottom */
 .bottom-person {
   text-align: center;
+  margin-top: 20px; /* Add spacing at the top */
+  width: 10;
+  height: 10;
 }
 .line {
   display: block;
@@ -174,10 +179,28 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT THE PROJECT</h3>
-  <p>DETI , just like every department from Aveiro University uses a keycard system to give after hours access to
-    students, professors and other employees </p>
-    <p>We live in a world full of technology, so why don't we use the one device we can't leave the house without? Why don't we use our own phone?</p>
- 
+  <p>O domínio da tecnologia encontra-se em constante desenvolvimento e sistemas de controlo de acessos não estão excluídos. 
+    Existe, portanto, uma maior necessidade de substituir sistemas desatualizados devido a crescentes fatores de inconveniência, quer estes sejam de segurança ou até mesmo mera facilidade de utilização.
+  </p>
+    <p> Foi projetado um sistema que utiliza tecnologia Near Field Communications(NFC) e o telemóvel pessoal para controlar acessos às salas do Departamento de Eletrónica Telecomunicações e Informática(DETI).</p>
+    <p> Para executar este projeto é necessário que todas as portas com acesso restrito estejam equipadas com um módulo NFC e que os servidores da Universidade de Aveiro estejam ativos e aptos a reconhecer todo o pessoal docente, não docente e alunos através de informação trocada entre a app e o módulo NFC previamente instalado na porta.
+      Este projeto visa desenvolver uma aplicação móvel para que seja possível a entrada em todas as salas do departamento às quais o utilizador tem acesso. Este método tem a vantagem de ser mais prático e user-friendly, podendo ser aplicada neste e noutros departamentos futuramente, bastando apenas a instalação da app no seu smartphone.
+    </p>
+
+    <p>Aqui, vamos descrever a pesquisa de soluções para oferecer uma alternativa ao uso de cartões de acesso que são atualmente utilizados e se revelam uma solução falível devido à sua transmissibilidade e possibilidade de perda. 
+     </p> 
+      <p>A solução passa por 2 métodos distintos baseados em NFC e Wifi.</p>
+
+    <h1>Arquitetura</h1>
+
+    <h1> NFC </h1>
+
+    <h1> Wifi </h1>
+
+    <h1> Aplicação Móvel </h1>
+
+
+
 </div>
 
 
@@ -223,7 +246,7 @@ body, html {
           <span class="icon"><i class="fas fa-envelope"></i></span>
           <span class="line">rmlameiras@ua.pt</span>
         </div>
-        <div class="bottom-person">
+        <div class="grid-item">
             <img src="images/eu.png" alt="Person 5">
             <span class="line">Rafael Santos</span>
             <span class="icon"><i class="fas fa-envelope"></i></span>
@@ -236,15 +259,7 @@ body, html {
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Base template from <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  
 </footer>
  
 <script>
